@@ -1,0 +1,36 @@
+﻿@{ ViewBag.Title = "Product Listing";
+    var pagedList = (IPagedList)ViewBag.Names; }
+
+
+@*@model PagedList.IPagedList<FizzBuzzModel>*@
+
+@*@model IEnumerable<string>*@
+
+@*@model IEnumerable<FizzBuzzModel>*@
+
+@using FizzBuzz.Web.XPagedList;
+@using FizzBuzz.Web.XPagedList.Common
+@using FizzBuzz.Web.XPagedList.Fluent
+<!-- import the included stylesheet for some (very basic) default styling -->
+<link href="/css/PagedList.css" rel="stylesheet" type="text/css" />
+
+
+<h2>List of Products</h2>
+<ul>
+    @foreach (var obj in ViewBag.Names)
+    {
+<li>@obj.Number</li>
+<li>@obj.Color</li>}
+</ul>
+
+
+
+@(Html.Pager(pagedList)
+    .Url(page => Url.Action("Index", new { page }))
+    .WithPartialView("Paging/_Pager_85")
+    .DisplayLinkToFirstPage (PagedListDisplayMode.IfNeeded)
+    .DisplayLinkToLastPage(PagedListDisplayMode.IfNeeded)
+    .DisplayLinkToPreviousPage()
+    .DisplayLinkToNextPage()
+    .MaximumPageNumbersToDisplay(3)
+    .Build())

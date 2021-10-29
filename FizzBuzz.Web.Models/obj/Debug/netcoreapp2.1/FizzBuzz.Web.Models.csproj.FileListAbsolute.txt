@@ -1,0 +1,17 @@
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.deps.json
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.dll
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.pdb
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.AssemblyInfoInputs.cache
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.AssemblyInfo.cs
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.csproj.CoreCompileInputs.cache
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.dll
+C:\Users\SANTOSH\source\repos\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.pdb
+D:\test\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.deps.json
+D:\test\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.dll
+D:\test\FizzBuzz.Web.Models\bin\Debug\netcoreapp2.1\FizzBuzz.Web.Models.pdb
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.csprojAssemblyReference.cache
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.AssemblyInfoInputs.cache
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.AssemblyInfo.cs
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.csproj.CoreCompileInputs.cache
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.dll
+D:\test\FizzBuzz.Web.Models\obj\Debug\netcoreapp2.1\FizzBuzz.Web.Models.pdb

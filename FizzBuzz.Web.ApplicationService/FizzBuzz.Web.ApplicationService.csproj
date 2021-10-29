@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Web.BusinessService\FizzBuzz.Web.BusinessService.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Web.Models\FizzBuzz.Web.Models.csproj" />
+  </ItemGroup>
+
+</Project>
