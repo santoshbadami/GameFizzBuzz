@@ -34,9 +34,9 @@ namespace FizzBuzz.Web.Controllers
         /// <param name="page number"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Index(int number, int page = 1)
+        public IActionResult Index(int number, string date, int page = 1)
         {
-            listUnpaged = GetValues(number);
+            listUnpaged = GetValues(number, date);
             ViewBag.Names = GetPagedNames(page);
 
             return View();
@@ -86,9 +86,9 @@ namespace FizzBuzz.Web.Controllers
 
             return listPaged;
         }
-        protected List<FizzBuzzModel> GetValues(int number)
+        protected List<FizzBuzzModel> GetValues(int number, string date)
         {
-            return _fizzBuzzApplicationService.GetNumbers(number);
+            return _fizzBuzzApplicationService.GetNumbers(number, date);
         }
         #endregion
     }

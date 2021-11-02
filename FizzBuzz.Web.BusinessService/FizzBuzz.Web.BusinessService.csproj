@@ -2,7 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FizzBuzzCategorizer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FizzBuzz.Web.Models\FizzBuzz.Web.Models.csproj" />

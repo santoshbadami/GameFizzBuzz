@@ -5,6 +5,6 @@ namespace FizzBuzz.Web.BusinessService
 {
     public interface IFizzBuzzBusinessService
     {
-        List<FizzBuzzModel> GetNumbers(int number);
+        List<FizzBuzzModel> GetNumbers(int number,string date);
     }
 }
