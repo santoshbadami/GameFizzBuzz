@@ -13,17 +13,26 @@ namespace FizzBuzz.Web.BusinessService
         {
             List<FizzBuzzModel> outputList = new List<FizzBuzzModel>();
 
-            bool isWednesday = Convert.ToDateTime(date).DayOfWeek.ToString() == "Wednesday";
+
+            IWizzWuzzHandler wizzWuzz = new WizzOutput()
+                .SetSuccessor(new WuzzOutput());
 
             IFizzBuzzHandler fizzBuzz = new NumberOutput()
                 .SetSuccessor(new FizzBuzzOutput())
-                .SetSuccessor(isWednesday ? new WizzOutput() : new FizzOutput())
-                .SetSuccessor(isWednesday ? new WuzzOutput() : new BuzzOutput());
+                .SetSuccessor(new FizzOutput())
+                .SetSuccessor(new BuzzOutput());
 
             for (var i = 1; i <= number; i++)
             {
-                string res = fizzBuzz.FizzBuzzOutput(i);
-                outputList.Add(new FizzBuzzModel() { Value = res });
+                string result = string.Empty;
+                string wizzWuzzResult = wizzWuzz.WizzWuzzOutput(i, date);
+
+                if (string.IsNullOrEmpty(wizzWuzzResult))
+                    result = fizzBuzz.FizzBuzzOutput(i);
+                else
+                    result = wizzWuzzResult;
+
+                outputList.Add(new FizzBuzzModel() { Value = result });
             }
 
             return outputList;

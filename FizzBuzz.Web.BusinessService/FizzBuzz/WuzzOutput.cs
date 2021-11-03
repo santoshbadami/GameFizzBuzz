@@ -1,16 +1,23 @@
 ﻿
+using System;
+
 namespace FizzBuzz.Web.BusinessService.FizzBuzz
 {
-    public class WuzzOutput : FizzBuzzHandler
+    public class WuzzOutput : WizzWuzzHandler
     {
         public override string Handle(int numberToHandle)
         {
             return "Wuzz";
         }
 
-        public override bool CanHandle(int numberToHandle)
+        public override bool CanHandleNumber(int numberToHandle)
         {
-            return numberToHandle%FizzBuzzValue.Buzz == 0;
+            return numberToHandle%WizzWuzzValue.Wuzz == 0;
+        }
+
+        public override bool CanHandleDate(string date)
+        {
+            return Convert.ToDateTime(date).DayOfWeek.ToString() == "Wednesday";
         }
     }
 }
