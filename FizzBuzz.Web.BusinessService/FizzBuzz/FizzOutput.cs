@@ -1,4 +1,5 @@
-﻿
+﻿using FizzBuzz.Web.BusinessService.Helpers;
+
 namespace FizzBuzz.Web.BusinessService.FizzBuzz
 {
     public class FizzOutput : FizzBuzzHandler
@@ -7,10 +8,9 @@ namespace FizzBuzz.Web.BusinessService.FizzBuzz
         {
             return "Fizz";
         }
-
         public override bool CanHandle(int numberToHandle)
         {
-            return numberToHandle%FizzBuzzValue.Fizz == 0;
+            return numberToHandle % FizzBuzzConstants.Fizz == 0;
         }
     }
 }

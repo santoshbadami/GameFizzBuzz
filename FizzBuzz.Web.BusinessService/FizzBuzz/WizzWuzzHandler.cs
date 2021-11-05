@@ -1,5 +1,4 @@
-﻿
-namespace FizzBuzz.Web.BusinessService.FizzBuzz
+﻿namespace FizzBuzz.Web.BusinessService.FizzBuzz
 {
     public abstract class WizzWuzzHandler : IWizzWuzzHandler
     {
@@ -24,14 +23,6 @@ namespace FizzBuzz.Web.BusinessService.FizzBuzz
                 Successor.SetSuccessor(successor);
 
             return this;
-        }
-
-        public class WizzWuzzValue
-        {
-            public static int Wizz { get { return 3; } }
-            public static int Wuzz { get { return 5; } }
-            public static int WizzWuzz { get { return Wizz * Wuzz; } }
-
         }
     }
 }

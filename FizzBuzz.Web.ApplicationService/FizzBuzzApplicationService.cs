@@ -15,9 +15,9 @@ namespace FizzBuzz.Web.ApplicationService
             _fizzBuzzBusinessService = fizzBuzzBusinessService;
         }
 
-        public List<FizzBuzzModel> GetNumbers(int number,string date)
+        public List<FizzBuzzModel> GetNumbers(int number)
         {
-            return _fizzBuzzBusinessService.GetNumbers(number,date);
+            return _fizzBuzzBusinessService.GetNumbers(number);
         }
     }
 }

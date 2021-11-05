@@ -1,4 +1,4 @@
-﻿
+﻿using FizzBuzz.Web.BusinessService.Helpers;
 using System;
 
 namespace FizzBuzz.Web.BusinessService.FizzBuzz
@@ -12,11 +12,11 @@ namespace FizzBuzz.Web.BusinessService.FizzBuzz
 
         public override bool CanHandleNumber(int numberToHandle)
         {
-            return numberToHandle % WizzWuzzValue.Wizz == 0;
+            return numberToHandle % WizzWuzzConstants.Wizz == 0;
         }
-        public override bool CanHandleDate(string date)
+        public override bool CanHandleDate(string day)
         {
-            return Convert.ToDateTime(date).DayOfWeek.ToString() == "Wednesday";
+            return DateTime.Now.DayOfWeek.ToString() == day;
         }
     }
 }
