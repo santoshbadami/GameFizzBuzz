@@ -17,7 +17,9 @@ namespace FizzBuzz.Web.BusinessService.FizzBuzz
         public FizzBuzzHandler SetSuccessor(FizzBuzzHandler successor)
         {
             if (Successor == null)
+            {
                 Successor = successor;
+            }
             else
                 Successor.SetSuccessor(successor);
 

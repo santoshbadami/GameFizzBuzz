@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12">
             <label class="form-input">
-                <input type="number" id="number" name="number" min="1" max="1000" required autofocus />
+                <input type="number" id="number" name="number" value="@TempData["number"]" min="1" max="1000" required autofocus />
             </label>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12">
@@ -27,6 +27,7 @@
     </div>
 </form>
 
+@{ TempData.Keep("number"); }
 @if (Model != null)
 {
     <table class="table">
@@ -36,10 +37,10 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var obj in Model)
+            @foreach (var fizzBuzzObj in Model)
             {
                 <tr>
-                    <td scope="row">@obj.Value</td>
+                    <td scope="row">@fizzBuzzObj.Value</td>
                 </tr>
             }
         </tbody>

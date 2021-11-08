@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/FizzBuzz.Web.ApplicationService/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.ApplicationService/obj/Debug/netcoreapp2.1
+/FizzBuzz.Web.ApplicationService/obj
+/FizzBuzz.Web.BusinessService/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.BusinessService/obj/Debug/netcoreapp2.1
+/FizzBuzz.Web.BusinessService/obj
+/FizzBuzz.Web.Models/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.Models/obj/Debug/netcoreapp2.1
+/FizzBuzz.Web.Models/obj
+/FizzBuzz.Web.Tests/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.Tests/obj/Debug/netcoreapp2.1
+/FizzBuzz.Web.Tests/obj
+/FizzBuzz.Web.ApplicationService.Tests/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.ApplicationService.Tests/obj/Debug/netcoreapp2.1
+/FizzBuzz.Web.ApplicationService.Tests/obj
+/FizzBuzz.Web.BusinessService.Tests/bin/Debug/netcoreapp2.1
+/FizzBuzz.Web.BusinessService.Tests/obj

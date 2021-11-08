@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web", "FizzBuzz.Web.csproj", "{4ED9F4C1-3EA3-4505-AAC1-5EC789379F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web", "FizzBuzz.Web.csproj", "{4ED9F4C1-3EA3-4505-AAC1-5EC789379F0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.ApplicationService", "..\FizzBuzz.Web.ApplicationService\FizzBuzz.Web.ApplicationService.csproj", "{0B47172D-0C2F-45B4-BED0-44826F1C7542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web.ApplicationService", "..\FizzBuzz.Web.ApplicationService\FizzBuzz.Web.ApplicationService.csproj", "{0B47172D-0C2F-45B4-BED0-44826F1C7542}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.BusinessService", "..\FizzBuzz.Web.BusinessService\FizzBuzz.Web.BusinessService.csproj", "{0383E1D9-3432-4F95-B9F3-CE2319B8BF23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web.BusinessService", "..\FizzBuzz.Web.BusinessService\FizzBuzz.Web.BusinessService.csproj", "{0383E1D9-3432-4F95-B9F3-CE2319B8BF23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.Models", "..\FizzBuzz.Web.Models\FizzBuzz.Web.Models.csproj", "{357E9371-3B94-4BFD-86A7-0C2A666A094A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web.Models", "..\FizzBuzz.Web.Models\FizzBuzz.Web.Models.csproj", "{357E9371-3B94-4BFD-86A7-0C2A666A094A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.Tests", "..\FizzBuzz.Web.Tests\FizzBuzz.Web.Tests.csproj", "{02571C0C-D9A7-4D58-9855-0D23546F1AAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web.Tests", "..\FizzBuzz.Web.Tests\FizzBuzz.Web.Tests.csproj", "{02571C0C-D9A7-4D58-9855-0D23546F1AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.ApplicationService.Tests", "..\FizzBuzz.Web.ApplicationService.Tests\FizzBuzz.Web.ApplicationService.Tests.csproj", "{BEA70A57-E541-4669-885D-1F237293C3D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web.BusinessService.Tests", "..\FizzBuzz.Web.BusinessService.Tests\FizzBuzz.Web.BusinessService.Tests.csproj", "{695C3301-25CD-4FF9-8EFD-1BC67F954830}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{02571C0C-D9A7-4D58-9855-0D23546F1AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02571C0C-D9A7-4D58-9855-0D23546F1AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02571C0C-D9A7-4D58-9855-0D23546F1AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA70A57-E541-4669-885D-1F237293C3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA70A57-E541-4669-885D-1F237293C3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA70A57-E541-4669-885D-1F237293C3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA70A57-E541-4669-885D-1F237293C3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695C3301-25CD-4FF9-8EFD-1BC67F954830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695C3301-25CD-4FF9-8EFD-1BC67F954830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695C3301-25CD-4FF9-8EFD-1BC67F954830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695C3301-25CD-4FF9-8EFD-1BC67F954830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

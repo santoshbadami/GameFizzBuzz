@@ -16,7 +16,7 @@ namespace FizzBuzz.Web.BusinessService
         }
         public List<FizzBuzzModel> GetNumbers(int number)
         {
-            List<FizzBuzzModel> outputList = new List<FizzBuzzModel>();
+            List<FizzBuzzModel> numberList = new();
 
             string day = _configuration["DefaultDate"];
 
@@ -30,18 +30,14 @@ namespace FizzBuzz.Web.BusinessService
 
             for (var i = 1; i <= number; i++)
             {
-                string result = string.Empty;
                 string wizzWuzzResult = wizzWuzz.WizzWuzzOutput(i, day);
 
-                if (string.IsNullOrEmpty(wizzWuzzResult))
-                    result = fizzBuzz.FizzBuzzOutput(i);
-                else
-                    result = wizzWuzzResult;
+                string result = string.IsNullOrEmpty(wizzWuzzResult) ? fizzBuzz.FizzBuzzOutput(i) : wizzWuzzResult;
 
-                outputList.Add(new FizzBuzzModel() { Value = result });
+                numberList.Add(new FizzBuzzModel() { Value = result });
             }
 
-            return outputList;
+            return numberList;
         }
     }
 }

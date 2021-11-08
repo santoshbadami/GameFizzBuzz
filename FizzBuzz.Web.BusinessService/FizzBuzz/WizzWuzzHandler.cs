@@ -18,7 +18,9 @@
         public WizzWuzzHandler SetSuccessor(WizzWuzzHandler successor)
         {
             if (Successor == null)
+            {
                 Successor = successor;
+            }
             else
                 Successor.SetSuccessor(successor);
 

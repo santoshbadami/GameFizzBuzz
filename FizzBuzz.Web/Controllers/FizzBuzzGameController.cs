@@ -12,7 +12,7 @@ namespace FizzBuzz.Web.Controllers
     {
         #region Private Variables
         private readonly IFizzBuzzApplicationService _fizzBuzzApplicationService;
-        private static List<FizzBuzzModel> listUnpaged;
+        private static List<FizzBuzzModel> fizzBuzzList;
         #endregion
 
         #region Constructor
@@ -36,8 +36,9 @@ namespace FizzBuzz.Web.Controllers
         [HttpPost]
         public IActionResult FizzBuzzPlay(int number, int page = 1)
         {
-            listUnpaged = GetValues(number);
+            fizzBuzzList = GetValues(number);
             IPagedList<FizzBuzzModel> numberList = GetPagedNames(page);
+            TempData["number"] = number;
             return View(numberList);
         }
 
@@ -72,17 +73,16 @@ namespace FizzBuzz.Web.Controllers
         {
             // return a 404 if user browses to before the first page
             if (page.HasValue && page < 1)
+            {
                 return null;
+            }
 
             // page the list
             const int pageSize = 20;
-            var listPaged = listUnpaged.ToPagedList(page ?? 1, pageSize);
+            IPagedList<FizzBuzzModel> listPaged = fizzBuzzList.ToPagedList(page ?? 1, pageSize);
 
             // return a 404 if user browses to pages beyond last page. special case first page if no items exist
-            if (listPaged.PageNumber != 1 && page.HasValue && page > listPaged.PageCount)
-                return null;
-
-            return listPaged;
+            return listPaged.PageNumber != 1 && page.HasValue && page > listPaged.PageCount ? null : listPaged;
         }
         protected List<FizzBuzzModel> GetValues(int number)
         {
